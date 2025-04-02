@@ -1,0 +1,14 @@
+#Configuração da porta do servidor
+server:
+  port: 8761
+
+# Configuração do nome da aplicação
+spring:
+  application:
+    name: ead-service-registry
+
+#para nao ficar se comunicando com ele mesmo
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
